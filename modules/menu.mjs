@@ -1,3 +1,4 @@
+// modules/menu.mjs
 export function showMenu(){
   const canvas=document.getElementById('cv'),ctx=canvas.getContext('2d');
   canvas.width=innerWidth;canvas.height=innerHeight-80;
