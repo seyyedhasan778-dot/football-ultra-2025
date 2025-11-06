@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Football Ultra 2025</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style>
+    body{margin:0;overflow:hidden;background:#000;font-family:Tahoma}
+    #cv{display:block;margin:auto;background:#090}
+    #log{position:fixed;bottom:0;width:100%;height:80px;background:rgba(0,0,0,.8);color:#fff;font-size:14px;padding:5px;overflow:hidden}
+  </style>
+</head>
+<body>
+  <canvas id="cv"></canvas>
+  <div id="log"></div>
+  <script>
+    const cv=document.getElementById('cv'),ctx=cv.getContext('2d'),log=document.getElementById('log');
+    function say(t){const p=document.createElement('div');p.textContent=t;log.insertBefore(p,log.firstChild);}
+    cv.width=innerWidth;cv.height=innerHeight-80;
+    function draw(){ctx.clearRect(0,0,cv.width,cv.height);ctx.fillStyle='#090';ctx.fillRect(0,0,cv
